@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Help Screen</title>
-    <link rel="stylesheet" href="../styles.css">
+    <title>Preferences Screen</title>
+    <link rel="stylesheet" href="assignment2/styles.css">
 </head>
 <body>
-    <div class="help-screen">
-        <h2>Help</h2>
-        <p>This section provides assistance and answers to common questions.</p>
-        <ul>
-            <li><strong>How to login?</strong> Enter your username and password on the login screen.</li>
-            <li><strong>How to set preferences?</strong> Navigate to the preferences screen to customize your settings.</li>
-            <li><strong>How to use main functionalities?</strong> Visit the main functionalities screen to access core features.</li>
-        </ul>
+    <div class="preferences-screen">
+        <h2>User Preferences</h2>
+        <form>
+            <label for="email-notifications">Email Notifications:</label>
+            <input type="checkbox" id="email-notifications" name="email-notifications">
+            <br>
+            <label for="dark-mode">Dark Mode:</label>
+            <input type="checkbox" id="dark-mode" name="dark-mode">
+            <br>
+            <button type="submit">Save Preferences</button>
+        </form>
     </div>
 </body>
 </html>
